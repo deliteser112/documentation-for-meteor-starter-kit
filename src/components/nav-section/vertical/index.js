@@ -29,7 +29,7 @@ NavSectionVertical.propTypes = {
 
 export default function NavSectionVertical({ navConfig, isCollapse = false, ...other }) {
   return (
-    <Box {...other}>
+    <Box {...other} sx={{ paddingBottom: 15 }}>
       {navConfig.map((group) => (
         <List key={group.subheader} disablePadding sx={{ px: 2 }}>
           <ListSubheaderStyle

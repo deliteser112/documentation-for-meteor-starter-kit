@@ -1,106 +1,28 @@
-# A demo of react-markdown
+<h6>This guide is for a Meteor Starter Kit for building a production-ready product.</h6> 
 
-react-markdown is a markdown component for React.
-<hr />
-👉 Changes are re-rendered as you type. <br />
-👈 Try writing some markdown on the left.
+Before you go any further, here are some big important things to know:
 
-## Overview
+Make sure you agree with MST's technology stack (MST: Meteor Starter Kit)
 
-* Follows [CommonMark](https://commonmark.org)
-* Optionally follows [GitHub Flavored Markdown](https://github.github.com/gfm/)
-* Renders actual React elements instead of using dangerouslySetInnerHTML
-* Lets you define your own components (to render MyHeading instead of h1)
-* Has a lot of plugins
-
-## Table of contents
-
-Here is an example of a plugin in action
-([remark-toc](https://github.com/remarkjs/remark-toc)).
-This section is replaced by an actual table of contents.
-
-## Syntax highlighting
-
-Here is an example of a plugin to highlight code:
-[rehype-highlight](https://github.com/rehypejs/rehype-highlight).
-
-~~~js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import ReactMarkdown from 'react-markdown'
-import rehypeHighlight from 'rehype-highlight'
-
-ReactDOM.render(
-  <ReactMarkdown rehypePlugins={[rehypeHighlight]}>{'# Your markdown here'}</ReactMarkdown>,
-  document.querySelector('#content')
-)
-~~~
-
-Pretty neat, eh?
-
-## GitHub flavored markdown (GFM)
-
-For GFM, you can *also* use a plugin:
-[remark-gfm](https://github.com/remarkjs/react-markdown#use).
-It adds support for GitHub-specific extensions to the language:
-tables, strikethrough, tasklists, and literal URLs.
-
-These features **do not work by default**.
-👆 Use the toggle above to add the plugin.
-
-| Feature    | Support              |
-| ---------: | :------------------- |
-| CommonMark | 100%                 |
-| GFM        | 100% w/ remark-gfm |
-
-~~strikethrough~~
-
-* [ ] task list
-* [x] checked item
-
-https://example.com
-
-## HTML in markdown
-
-⚠️ HTML in markdown is quite unsafe, but if you want to support it, you can
-use [rehype-raw](https://github.com/rehypejs/rehype-raw).
-You should probably combine it with
-[rehype-sanitize](https://github.com/rehypejs/rehype-sanitize).
-
-<blockquote>
-  👆 Use the toggle above to add the plugin.
-</blockquote>
-
-## Components
-
-You can pass components to change things:
-
-~~~js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import ReactMarkdown from 'react-markdown'
-import MyFancyRule from './components/my-fancy-rule.js'
-
-ReactDOM.render(
-  <ReactMarkdown
-    components={{
-      // Use h2s instead of h1s
-      h1: 'h2',
-      // Use a component instead of hrs
-      hr: ({node, ...props}) => <MyFancyRule {...props} />
-    }}
-  >
-    # Your markdown here
-  </ReactMarkdown>,
-  document.querySelector('#content')
-)
-~~~
-
-## More info?
-
-Much more info is available in the
-[readme on GitHub](https://github.com/remarkjs/react-markdown)!
+* MST is built on top of the Meteor JavaScript platform (MST utilizes the simplicity of its build system and accounts implementation).
+* MST uses GraphQL for its data. It ships with a fully implemented GraphQL server and schema with subscriptions support.
+* MST uses MongoDB as its database but GraphQL allows you to use any data source.
+* MST uses React for its UI library.
+* MST uses Material UI(v5.8.0) for its CSS/SCSS framework and React MUI to get Material components in React.
+* MST uses React Router v6 for its router.
+* MST uses React Material UI framework for authoring CSS.
+* MST includes server-side rendering (SSR) out of the box.
 
 ***
 
-A component by [Espen Hovlandsdal](https://espen.codes/)
+MST is designed for production use
+
+<blockquote>
+  👉The goal of MST is to give you a real-world foundation for your product. It's designed to be production ready from day one. The technology it uses is designed to be "scale friendly," though, scaling is up to you— ⚠️ that's impossible for MST to automate.
+</blockquote>
+
+***
+
+If all of this sounds good, you're ready to get started! Your first step is to clone MST and install its dependencies:
+
+[<Button variant="contained">Clone MST & Install Dependencies</Button>](https://github.com/deliteser112/meteor-starter-kit)

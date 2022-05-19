@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 // icons
 // @mui
 import { Box, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 
 // components
 import Image from './Image';
@@ -28,13 +28,14 @@ TopSection.propTypes = {
 };
 
 export default function TopSection({ title, subtitle, description }) {
+  const theme = useTheme();
   return (
     <RootStyle>
       <TitleStyle>
         <Typography variant="h3">{title} | {subtitle}</Typography>
         <Typography variant="h6">{description}</Typography>
       </TitleStyle>
-      <Image alt={title} sx={{ width: '100%' }} src="/assets/doc-back.png" />
+      <Image alt={title} sx={{ width: '100%', maxHeight: '270px', [theme.breakpoints.down('sm')]: { height: '200px' }, marginBottom: 5 }} src="/assets/doc-back.png" />
     </RootStyle>
   );
 }

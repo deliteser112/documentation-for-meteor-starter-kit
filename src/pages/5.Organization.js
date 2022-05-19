@@ -9,20 +9,20 @@ import Markdown from '../components/Markdown';
 import TopSection from '../components/TopSection';
 
 // text
-import CloningInstall from '../texts/cloningInstall.md';
+import OrganizationMD from '../texts/organization.md';
 
 // ----------------------------------------------------------------------
 
-export default function CloingInstall() {
+export default function Organization() {
   const [convertText, setConvertText] = useState('')
 
   // Fetch Terms of Use
 	useEffect(() => {
-		fetch(CloningInstall).then(res => res.text()).then(text => setConvertText(text))
+		fetch(OrganizationMD).then(res => res.text()).then(text => setConvertText(text))
 	})
   return (
-    <Page title="Cloning & Install">
-      <TopSection title="Getting Started" subtitle="Cloning & Installing Dependencies" description="The meteor is based on version 2.7.2(latest version)" />
+    <Page title="Organization">
+      <TopSection title="React" subtitle="Organizational Conventions" description="MST is using React, React-Dom v17" />
       <Container maxWidth="xl">
         <Markdown children={convertText} />
       </Container>

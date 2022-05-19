@@ -9,20 +9,20 @@ import Markdown from '../components/Markdown';
 import TopSection from '../components/TopSection';
 
 // text
-import CloningInstall from '../texts/cloningInstall.md';
+import DefiningGuardsMD from '../texts/definingGuards.md';
 
 // ----------------------------------------------------------------------
 
-export default function CloingInstall() {
+export default function DefiningGuards() {
   const [convertText, setConvertText] = useState('')
 
   // Fetch Terms of Use
 	useEffect(() => {
-		fetch(CloningInstall).then(res => res.text()).then(text => setConvertText(text))
+		fetch(DefiningGuardsMD).then(res => res.text()).then(text => setConvertText(text))
 	})
   return (
-    <Page title="Cloning & Install">
-      <TopSection title="Getting Started" subtitle="Cloning & Installing Dependencies" description="The meteor is based on version 2.7.2(latest version)" />
+    <Page title="Defining Guards">
+      <TopSection title="Routing" subtitle="Defining Guards" description="MST is using React Router v6" />
       <Container maxWidth="xl">
         <Markdown children={convertText} />
       </Container>

@@ -9,20 +9,20 @@ import Markdown from '../components/Markdown';
 import TopSection from '../components/TopSection';
 
 // text
-import CloningInstall from '../texts/cloningInstall.md';
+import DefiningComponentsMD from '../texts/definingComponents.md';
 
 // ----------------------------------------------------------------------
 
-export default function CloingInstall() {
+export default function DefiningComponents() {
   const [convertText, setConvertText] = useState('')
 
   // Fetch Terms of Use
 	useEffect(() => {
-		fetch(CloningInstall).then(res => res.text()).then(text => setConvertText(text))
+		fetch(DefiningComponentsMD).then(res => res.text()).then(text => setConvertText(text))
 	})
   return (
-    <Page title="Cloning & Install">
-      <TopSection title="Getting Started" subtitle="Cloning & Installing Dependencies" description="The meteor is based on version 2.7.2(latest version)" />
+    <Page title="Defining Components">
+      <TopSection title="React" subtitle="Defining Components" description="MST is using React Material UI v5.8.0" />
       <Container maxWidth="xl">
         <Markdown children={convertText} />
       </Container>
