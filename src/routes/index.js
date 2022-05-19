@@ -41,16 +41,19 @@ export default function Router() {
         { path: 'creating-graphql', element: <CreatingGraphQL /> },
         { path: 'defining-schema', element: <DefiningSchema /> },
         { path: 'performing-queries', element: <PerformingQueries /> },
-        { path: 'graphql-playground', element: <CloneInstall /> },
         { path: 'styled-components', element: <CloneInstall /> },
-        { path: 'defining-theme', element: <CloneInstall /> },
-        { path: 'signup', element: <CloneInstall /> },
-        { path: 'login', element: <CloneInstall /> },
-        { path: 'oauth', element: <CloneInstall /> },
-        { path: 'on-create-user', element: <CloneInstall /> },
-        { path: 'gdpr', element: <CloneInstall /> },
-        { path: 'users', element: <CloneInstall /> },
-        { path: 'user-setting', element: <CloneInstall /> }
+        { path: 'defining-theme', element: <DefiningTheme /> },
+        { path: 'signup', element: <SignUp /> },
+        { path: 'login', element: <Login /> },
+        { path: 'oauth', element: <OAuth /> },
+        { path: 'on-create-user', element: <OnCreateUser /> },
+        { path: 'gdpr', element: <GDPR /> },
+        { path: 'users', element: <Users /> },
+        { path: 'user-settings', element: <UserSettings /> },
+        { path: 'eslint', element: <Users /> },
+        { path: 'package-json', element: <Users /> },
+        { path: 'settings-env-json', element: <Users /> },
+        { path: 'gitignore', element: <Users /> }
       ],
     },
     {
@@ -77,6 +80,14 @@ const Forms = Loadable(lazy(() => import('../pages/8.Forms')));
 const CreatingGraphQL = Loadable(lazy(() => import('../pages/9.CreatingGraphQL')));
 const DefiningSchema = Loadable(lazy(() => import('../pages/10.DefiningSchema')));
 const PerformingQueries = Loadable(lazy(() => import('../pages/11.PerformingQueries')));
+const DefiningTheme = Loadable(lazy(() => import('../pages/12.DefiningTheme')));
+const SignUp = Loadable(lazy(() => import('../pages/13.SignUp')));
+const Login = Loadable(lazy(() => import('../pages/14.Login')));
+const OAuth = Loadable(lazy(() => import('../pages/15.OAuth')));
+const OnCreateUser = Loadable(lazy(() => import('../pages/16.OnCreateUser')));
+const GDPR = Loadable(lazy(() => import('../pages/17.GDPR')));
+const Users = Loadable(lazy(() => import('../pages/18.Users')));
+const UserSettings = Loadable(lazy(() => import('../pages/19.UserSettings')));
 
 // page not found
 const NotFound = Loadable(lazy(() => import('../pages/Page404')));

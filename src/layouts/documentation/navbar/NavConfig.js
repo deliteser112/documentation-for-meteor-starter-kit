@@ -48,7 +48,6 @@ const navConfig = [
       { title: 'Creating GraphQL Server', path: '/documentation/creating-graphql' },
       { title: 'Defining a Schema', path: '/documentation/defining-schema' },
       { title: 'Performing Queries & Mutations', path: '/documentation/performing-queries' },
-      { title: 'GraphQL Playground', path: '/documentation/graphql-playground' },
     ],
   },
   // Styling
@@ -56,7 +55,7 @@ const navConfig = [
   {
     subheader: 'Styling',
     items: [
-      { title: 'Styled Components', path: '/documentation/styled-components' },
+      // { title: 'Styled Components', path: '/documentation/styled-components' },
       { title: 'Defining Theme', path: '/documentation/defining-theme' }
     ],
   },
@@ -81,6 +80,19 @@ const navConfig = [
     items: [
       { title: 'Users', path: '/documentation/users' },
       { title: 'User Settings', path: '/documentation/user-settings' },
+    ],
+  },
+
+  // Setting & Configuration
+  // ----------------------------------------------------------------------
+  {
+    subheader: 'Setting & Configuration',
+    items: [
+      { title: 'settings-<env>.json', path: '/documentation/setting-env-json' },
+      { title: 'package.json', path: '/documentation/package-json' },
+      { title: '.gitignore', path: '/documentation/gitignore' },
+      { title: 'ESLint', path: '/documentation/eslint' },
+      { title: 'Package.json', path: '/documentation/package-json' },
     ],
   },
 ];

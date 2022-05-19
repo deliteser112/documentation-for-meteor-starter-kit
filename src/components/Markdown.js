@@ -17,7 +17,6 @@ const MarkdownStyle = styled('div')(({ theme }) => {
 
   return {
     '& *': {
-      textIndent: '20px',
       marginBottom: '20px',
       lineHeight: 2,
       fontFamily: 'system-ui'
@@ -40,7 +39,7 @@ const MarkdownStyle = styled('div')(({ theme }) => {
       margin: theme.spacing(1, 0),
       borderLeft: '5px solid #00AB55',
       backgroundColor: theme.palette.background.neutral,
-      color: `${theme.palette.text.secondary} !important`,
+      // color: `${theme.palette.text.secondary} !important`,
       [theme.breakpoints.up('md')]: {
         width: '80%',
       },
@@ -50,9 +49,8 @@ const MarkdownStyle = styled('div')(({ theme }) => {
       },
       '& p, & span': {
         marginBottom: '0 !important',
-        fontSize: 'inherit !important',
-        fontFamily: 'Georgia, serif !important',
-        color: `${theme.palette.text.secondary} !important`,
+        // fontSize: 'inherit !important',
+        // color: `${theme.palette.text.secondary} !important`,
       },
     },
 
