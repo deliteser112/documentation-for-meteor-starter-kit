@@ -50,10 +50,10 @@ export default function Router() {
         { path: 'gdpr', element: <GDPR /> },
         { path: 'users', element: <Users /> },
         { path: 'user-settings', element: <UserSettings /> },
-        { path: 'eslint', element: <Users /> },
-        { path: 'package-json', element: <Users /> },
-        { path: 'settings-env-json', element: <Users /> },
-        { path: 'gitignore', element: <Users /> }
+        { path: 'eslint', element: <ESLint /> },
+        { path: 'package-json', element: <PackageJSON /> },
+        { path: 'setting-env-json', element: <SettingJSON /> },
+        { path: 'gitignore', element: <GitIgnore /> }
       ],
     },
     {
@@ -88,6 +88,10 @@ const OnCreateUser = Loadable(lazy(() => import('../pages/16.OnCreateUser')));
 const GDPR = Loadable(lazy(() => import('../pages/17.GDPR')));
 const Users = Loadable(lazy(() => import('../pages/18.Users')));
 const UserSettings = Loadable(lazy(() => import('../pages/19.UserSettings')));
+const SettingJSON = Loadable(lazy(() => import('../pages/20.SettingJSON')));
+const PackageJSON = Loadable(lazy(() => import('../pages/21.PackageJSON')));
+const GitIgnore = Loadable(lazy(() => import('../pages/22.GitIgnore')));
+const ESLint = Loadable(lazy(() => import('../pages/23.ESLint')));
 
 // page not found
 const NotFound = Loadable(lazy(() => import('../pages/Page404')));

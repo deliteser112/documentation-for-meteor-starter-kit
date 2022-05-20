@@ -15,16 +15,7 @@ The page includes support for the <span class="badge">< OAuthLoginButtons /></sp
   import { Link as RouterLink, useNavigate } from 'react-router-dom';
   import { useFormik, Form, FormikProvider } from 'formik';
   // material
-  import {
-    Link,
-    Stack,
-    Checkbox,
-    TextField,
-    IconButton,
-    InputAdornment,
-    FormControlLabel,
-    Alert,
-  } from '@mui/material';
+  import { Link, Stack, Checkbox, TextField, IconButton, InputAdornment, FormControlLabel, Alert, } from '@mui/material';
   import { LoadingButton } from '@mui/lab';
   // routes
   import { PATH_AUTH, PATH_DASHBOARD } from '../../../routes/paths';
@@ -46,11 +37,7 @@ The page includes support for the <span class="badge">< OAuthLoginButtons /></sp
     });
 
     const formik = useFormik({
-      initialValues: {
-        email: '',
-        password: '',
-        remember: true,
-      },
+      initialValues: { email: '', password: '', remember: true, },
       validationSchema: LoginSchema,
       onSubmit: (values, { setSubmitting }) => {
         const { email, password } = values;
@@ -113,22 +100,12 @@ The page includes support for the <span class="badge">< OAuthLoginButtons /></sp
               label="Remember me"
             />
 
-            <Link
-              component={RouterLink}
-              variant="subtitle2"
-              to={PATH_AUTH.resetPassword}
-              underline="hover"
-            >
+            <Link component={RouterLink} variant="subtitle2" to={PATH_AUTH.resetPassword} underline="hover">
               Forgot password?
             </Link>
           </Stack>
 
-          <LoadingButton
-            size="large"
-            type="submit"
-            variant="contained"
-            loading={isSubmitting}
-          >
+          <LoadingButton size="large" type="submit" variant="contained" loading={isSubmitting} >
             Login
           </LoadingButton>
         </Form>

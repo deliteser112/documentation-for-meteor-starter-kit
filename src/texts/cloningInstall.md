@@ -31,7 +31,7 @@ Make sure to run this from the root of your project in your terminal.
 
 Have MST installed, running, and wondering what's next? We recommend learning about how MST organizes React components:
 
-[<Button variant="contained">Learn About Organizing React Components</Button>](https://github.com/deliteser112/meteor-starter-kit)
+[<Button variant="contained">Learn About Organizing React Components</Button>](/documentation/organization)
 
 ***
 

@@ -92,7 +92,6 @@ const navConfig = [
       { title: 'package.json', path: '/documentation/package-json' },
       { title: '.gitignore', path: '/documentation/gitignore' },
       { title: 'ESLint', path: '/documentation/eslint' },
-      { title: 'Package.json', path: '/documentation/package-json' },
     ],
   },
 ];

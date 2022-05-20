@@ -12,7 +12,6 @@ export const ListItemStyle = styled(ListItemButton, {
   ...theme.typography.body2,
   position: 'relative',
   height: NAVBAR.DASHBOARD_ITEM_ROOT_HEIGHT,
-  textTransform: 'capitalize',
   paddingLeft: theme.spacing(2),
   // paddingRight: theme.spacing(1.5),
   marginBottom: theme.spacing(0.5),
